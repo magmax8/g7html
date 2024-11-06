@@ -1,0 +1,13 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/Librerias/static/DynaPuff-Bold.ttf);
+  }
+  
+.Golito {
+    font-family: myFirstFont;
+  }
+
+
+  main {
+    height: 430px;
+  }
