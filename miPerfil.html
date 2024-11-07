@@ -1,0 +1,55 @@
+<div>   
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Mi Perfil</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="registroForm" data-parsley-validate>
+              <div class="row mb-1">
+                    <div class="col-5">
+                        <label for="tipoDoc" class="col-form-label">Tipo de Documento</label>
+                        <input type="text" class="form-control" id="tipoDoc" name="tipoDoc"
+                                        required
+                                        data-parsley-pattern="^(CC|TI|EX|PAS)$"
+                                        data-parsley-error-message="Debe introducir CC TI EX PAS"
+                                        data-parsley-trigger="keyup">
+                    </div>
+                    <div class="col-7">
+                        <label for="nroDoc" class="col-form-label">Nro. Documento</label>
+                        <input type="text" class="form-control" id="nroDoc">
+                    </div>
+              </div>
+              <div class="mb-1">
+                <label for="nombres" class="col-form-label">Nombres:</label>
+                <input type="text" class="form-control" id="nombres">
+              </div>
+              <div class="mb-1">
+                <label for="apellidos" class="col-form-label">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidos">
+              </div>
+              <div class="mb-1">
+                <label for="correo" class="col-form-label">Correo:</label>
+                <input type="email" class="form-control" id="correo">
+              </div>
+              <div class="mb-1">
+                <label for="clave" class="col-form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="clave">
+              </div>
+              <div class="mb-1">
+                <label for="claveC" class="col-form-label">Confirmar Contraseña:</label>
+                <input type="password" class="form-control" id="claveC">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
